@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --night: #0b111e;
+  --neon: #00d2ff;
+}
+
+body {
+  @apply bg-[#0b111e] text-gray-100 antialiased;
+  background: radial-gradient(ellipse at top, #0f172a 0%, #0b111e 70%);
+  min-height: 100vh;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-glass rounded-2xl;
+}
+
+.neon-glow {
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #00d2ff33;
+  border-radius: 999px;
+}
